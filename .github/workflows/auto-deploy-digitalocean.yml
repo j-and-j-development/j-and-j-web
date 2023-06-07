@@ -1,0 +1,11 @@
+name: Auto Deploy to DigitalOcean
+run-name: ${{ github.actor }} is deploying to DigitalOcean
+on: [push]
+jobs:
+  auto-deploy-digitalocean:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: digitalocean/app_action@v1.1.5
+        with:
+          app_name: my_DO_app
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
