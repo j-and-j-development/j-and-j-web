@@ -1,9 +1,9 @@
-name: Auto Deploy to DigitalOcean
-run-name: ${{ github.actor }} is deploying to DigitalOcean production
+name: Auto Deploy to DigitalOcean Development
+run-name: ${{ github.actor }} is deploying to DigitalOcean Development
 on:
   push:
     branches:
-      - production
+      - development
 jobs:
   auto-deploy-digitalocean:
     runs-on: ubuntu-latest
