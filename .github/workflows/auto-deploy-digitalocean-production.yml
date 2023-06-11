@@ -1,4 +1,4 @@
-name: Auto Deploy to DigitalOcean
+name: Auto Deploy to DigitalOcean Production
 run-name: ${{ github.actor }} is deploying to DigitalOcean production
 on:
   push:
